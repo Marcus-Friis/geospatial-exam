@@ -1,5 +1,7 @@
 # Hyggebike 🚲
 
+<img src="pictures/hyggebike.png" width=400 style="display: block; margin-left: auto; margin-right: auto;"></img>
+
 Exam project for Geospatial Data Science 
 
 By Mads Høgenhaug, Marcus Friis &  Morten Pedersen
