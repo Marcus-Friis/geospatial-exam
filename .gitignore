@@ -4,6 +4,10 @@ run.sh
 *.csv
 *.json
 
+# unignore the following files
+!data/edges.json
+!data/nodes.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
