@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 .attr('stroke-width', 1);
 
             // add streets
-            d3.json('http://localhost:8000/data/edges.json')
+            d3.json('https://raw.githubusercontent.com/Marcus-Friis/hyggebike/main/data/edges.json')
                 .then(function(data) {
                     console.log(data);
 
