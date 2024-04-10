@@ -31,9 +31,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     console.log(data);
 
                     // length colorscale
-                    let lengthExtent = d3.extent(data.features, d => d.properties.length);
-                    let colorScale = d3.scaleSequential(d3.interpolateViridis)
-                        .domain(lengthExtent);
+                    // let lengthExtent = d3.extent(data.features, d => d.properties.betweenness);
+                    // let colorScale = d3.scaleSequential(d3.interpolateViridis)
+                    //     .domain(lengthExtent);
+                    // quantile colorscale
+                    let colorScale = d3.scaleQuantile()
+                        .domain(data.features.map(d => d.properties.betweenness))
+                        .range(d3.schemeYlGnBu[5]);
 
                     svg.append('g').attr('class', 'edges')
                         .selectAll('path')
@@ -42,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         .attr('d', d3.geoPath().projection(projection))
                         .attr('fill', 'none')
                         .attr('stroke', function(d) {
-                            return colorScale(d.properties.length);
+                            return colorScale(d.properties.betweenness);
                         })
                         .attr('stroke-width', 1)
                         .classed('road', true);
