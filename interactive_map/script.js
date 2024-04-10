@@ -38,7 +38,12 @@ document.addEventListener('DOMContentLoaded', function() {
                     let colorScale = d3.scaleQuantile()
                         .domain(data.features.map(d => d.properties.betweenness))
                         .range(d3.schemeYlGnBu[5]);
-
+                    
+                    // stroke width scale based on betweenness quantile
+                    let widthScale = d3.scaleQuantile()
+                        .domain(data.features.map(d => d.properties.betweenness))
+                        .range([0.1, 0.25, 0.5, 0.75, 1]);
+                        
                     svg.append('g').attr('class', 'edges')
                         .selectAll('path')
                         .data(data.features)
@@ -48,7 +53,9 @@ document.addEventListener('DOMContentLoaded', function() {
                         .attr('stroke', function(d) {
                             return colorScale(d.properties.betweenness);
                         })
-                        .attr('stroke-width', 1)
+                        .attr('stroke-width', function(d) {
+                            return widthScale(d.properties.betweenness);
+                        })
                         .classed('road', true);
                 })
                 .catch(function(error) {
