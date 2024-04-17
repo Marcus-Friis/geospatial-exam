@@ -15,5 +15,8 @@ Introducing "Hyggebike": A framework to get the hyggeligste route from point A t
 
 
 ## Data
-
+### Birds
 bird_observations.rar: Bird observations, downloaded from https://dofbasen.dk/search/index.php with area set to "DOF København" and years set to 2020 to 2024, afterwards cleaned as to only have observations with exact locations marked.
+
+### Noise
+Lorem ipsum
