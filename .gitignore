@@ -1,8 +1,9 @@
 cache/
 run.sh
 
-*.csv
 *.json
+data/raw/*
+!data/raw/.gitkeep
 
 # unignore the following files
 !data/edges.json
