@@ -38,6 +38,6 @@ bird_observations.rar: Bird observations, downloaded from https://dofbasen.dk/se
 Trees.rar: Municipal trees in Copenhagen municipality. From https://www.opendata.dk/city-of-copenhagen/trae-basis-kommunale-traeer#resource-traer_basis.csv
 
 ### Noise
-[Stoej.rar](data/raw/stoej.rar): Noise data for Copenhagen municipality only. Downloaded from: [Opendata.dk](https://www.opendata.dk/city-of-copenhagen/vejstoej_2022). The data is displayed at [Copenhagen's Municipality's webiste](https://www.opendata.dk/city-of-copenhagen/vejstoej_2022)
+[Stoej.rar](data/raw/stoej.rar): Noise data for Copenhagen municipality only. Downloaded from: [Opendata.dk](https://www.opendata.dk/city-of-copenhagen/vejstoej_2022). The data is displayed at [Copenhagen's Municipality's webiste](https://www.kk.dk/borger/affald-og-miljoe/stoej-stoev-og-luft/trafikstoej). 
 
 
