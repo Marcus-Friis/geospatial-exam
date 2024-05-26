@@ -28,20 +28,13 @@ Introducing "Hyggebike": A framework to get the hyggeligste route from point A t
 
 
 ## Data
-### Air pollution
-Airpolution.geojson.txt: Air pollution in Copenhagen municipality measured from 5 November 2018 to 1 March 2020 using a Google Street View car with attached scientific aerial measurement equipment. From https://www.opendata.dk/city-of-copenhagen/airview
-
 ### Birds
 bird_observations.rar: Bird observations, downloaded from https://dofbasen.dk/search/index.php with area set to "DOF København" and years set to 2020 to 2024, afterwards cleaned as to only have observations with exact locations marked.
-
-### Cafes
-cafes.geojson: Cafes in Copenhagen area, from OSM with Tag:amenity=cafe.
 
 ### Trees
 Trees.rar: Municipal trees in Copenhagen municipality. From https://www.opendata.dk/city-of-copenhagen/trae-basis-kommunale-traeer#resource-traer_basis.csv
 
 ### Noise
-Lorem ipsum
+[Stoej.rar](data/raw/stoej.rar): Noise data for Copenhagen municipality only. Downloaded from: [Opendata.dk](https://www.opendata.dk/city-of-copenhagen/vejstoej_2022). The data is displayed at [Copenhagen's Municipality's webiste](https://www.kk.dk/borger/affald-og-miljoe/stoej-stoev-og-luft/trafikstoej). 
 
-### Drinking water
-drinkingwater.geojson: Drinking water in Copenhagen area, from OSM with Tag:amenity=drinking_water.
+
