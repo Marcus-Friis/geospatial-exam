@@ -9,8 +9,8 @@ Introducing ***Hygge*****bike**: A framework to get the _hyggeligste_ route from
 ## Overview
 This repository contains and documents all steps in creating the _Hygge_bike pathfinder. There are 4 important notebooks that produce our results
 - [`bird-edges.ipynb`](/notebooks/bird-edges.ipynb) --> [`bird_edges.csv`](/data/bird_edges.csv)
-- [`tree-edges.ipynb`](/notebooks/tree-edges.ipynb) --> [`bird_edges.csv`](/data/bird_edges.csv)
-- [`noise-edges.ipynb`](/notebooks/noise-edges.ipynb) --> [`bird_edges.csv`](/data/bird_edges.csv)
+- [`tree-edges.ipynb`](/notebooks/tree-edges.ipynb) --> [`tree_edges.csv`](/data/tree_edges.csv)
+- [`noise-edges.ipynb`](/notebooks/noise-edges.ipynb) --> [`noise_edges.csv`](/data/noise_edges.csv)
 - [`hyggefinder.ipynb`](/notebooks/hyggefinder.ipynb) --> *Hygge*bike pathfinding algorithm 😎  
 
 The first 3 notebooks wrangle and proces spatial data to produce edge level features, used for creating the algorithm. The last notebook, [`hyggefinder.ipynb`](/notebooks/hyggefinder.ipynb), produces the actual pathfinding algorithm and all other results. All notebooks are run using the _Docker Image_ `gds_py:8.0`.
